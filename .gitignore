@@ -1,0 +1,39 @@
+# Python
+__pycache__/
+*.py[cod]
+.Python
+.venv/
+venv/
+
+# 密钥与本地环境
+.env
+*.env
+
+# IDE
+.vscode/
+.idea/
+
+# 本地数据库
+db.sqlite3
+
+# uni-app 构建缓存
+unpackage/
+
+# 模型权重过大，GitHub 单文件限制 100MB
+*.safetensors
+*.onnx
+**/pytorch_model.bin
+**/.cache/
+
+# 运行时上传的用户图片
+服务器端/llm_server/static/uploads/
+服务器端/llm_server/static/avatar/
+
+# 嵌套仓库备份（避免把上游模型仓库或空仓库元数据提交进去）
+.git-empty-backup/
+.git-modelscope-backup/
+
+# 系统文件
+Thumbs.db
+Desktop.ini
+.DS_Store
