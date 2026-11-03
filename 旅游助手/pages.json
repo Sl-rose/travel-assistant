@@ -1,0 +1,114 @@
+{
+	"pages": [
+		{
+			"path": "pages/index/index",
+			"style": {
+				"navigationBarTitleText": "边界旅行"
+			}
+		},
+		{
+			"path" : "pages/assistant/assistant",
+			"style" : 
+			{
+				"navigationBarTitleText" : ""
+			}
+		},
+		{
+			"path" : "pages/person/person",
+			"style" : 
+			{
+				"navigationBarTitleText" : ""
+			}
+		},{
+			"path": "pages/china/china",
+			"style": {
+				"navigationBarTitleText": ""
+			}
+		},
+		{
+			"path": "pages/out/out",
+			"style": {
+				"navigationBarTitleText": ""
+			}
+		},
+		{
+			"path": "pages/login/login",
+			"style": {
+				"navigationBarTitleText": ""
+			}
+		},
+		{
+			"path": "pages/china1/china1",
+			"style": {
+				"navigationBarTitleText": ""
+			}
+		},
+		{
+			"path": "pages/china2/china2",
+			"style": {
+				"navigationBarTitleText": ""
+			}
+		},
+		{
+			"path": "pages/china3/china3",
+			"style": {
+				"navigationBarTitleText": ""
+			}
+		},
+		{
+			"path": "pages/china4/china4",
+			"style": {
+				"navigationBarTitleText": ""
+			}
+		},
+		{
+			"path": "pages/china5/china5",
+			"style": {
+				"navigationBarTitleText": ""
+			}
+		},
+		{
+			"path": "pages/out1/out1",
+			"style": {
+				"navigationBarTitleText": ""
+			}
+		}
+		
+	],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "uni-app",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8"
+	},
+	"uniIdRouter": {},
+	"tabBar": {
+		"color": "#7A7E83",
+		"selectedColor": "#3cc51f",
+		"borderStyle": "black",
+		"backgroundColor": "#ffffff",
+		"list": [{
+			"pagePath": "pages/index/index",
+			"iconPath": "/static/导航栏/首页.png",
+			"selectedIconPath": "/static/导航栏/首页 (1).png",
+			"text": "首页"
+		},{
+			"pagePath": "pages/china/china",
+			"iconPath": "/static/导航栏/国内游.png",
+			"selectedIconPath": "/static/导航栏/国内游 (1).png",
+			"text": "国内"
+		},{
+			"pagePath": "pages/out/out",
+			"iconPath": "/static/导航栏/39-国际.png",
+			"selectedIconPath": "/static/导航栏/39-国际 (1).png",
+			"text": "国外"
+		},{
+			"pagePath": "pages/person/person",
+			"iconPath": "/static/导航栏/我的.png",
+			"selectedIconPath": "/static/导航栏/我的 (1).png",
+			"text": "我的"
+		}
+		]
+	}
+
+}
