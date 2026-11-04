@@ -39,7 +39,7 @@ load_local_env(BASE_DIR / "travelassistant" / ".env")
 # See https://docs.djangoproject.com/en/5.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = "django-insecure-987y**j46uz$_cs=0!a3em$)t---$h8as7*ydqx3&g&z-ajo%j"
+SECRET_KEY = os.getenv("DJANGO_SECRET_KEY", "")
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -101,7 +101,7 @@ DATABASES = {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'travel_assistant',      # 你在 MySQL 中创建的数据库名
         'USER': 'root',              # 数据库用户名
-        'PASSWORD': 'root', # 数据库密码
+        'PASSWORD': os.getenv("DB_PASSWORD", ""),
         'HOST': '127.0.0.1',         # 数据库地址
         'PORT': '3306',              # 端口
         'OPTIONS': {
@@ -158,7 +158,7 @@ DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 #跨域处理配置
 CORS_ALLOW_ALL_ORIGINS = True
 
-JWT_SECRET = 'travel-assistant-secret-key-2024'  
+JWT_SECRET = os.getenv("JWT_SECRET", "")
 JWT_ALGORITHM = 'HS256'
 JWT_EXPIRE_DAYS = 7
 

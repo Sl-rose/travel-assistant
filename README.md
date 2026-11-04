@@ -24,7 +24,7 @@ uni-app 前端和 Django 后端组成的旅游助手。首页可以浏览国内�
 
 ## 后端
 
-在 MySQL 中创建数据库 `travel_assistant`，字符集用 `utf8mb4`。连接账号写在 `服务器端/llm_server/aisite/settings.py`，默认连本机 `3306`。
+在 MySQL 中创建数据库 `travel_assistant`，字符集用 `utf8mb4`。数据库地址和库名写在 `服务器端/llm_server/aisite/settings.py`，默认连本机 `3306`。密码从环境变量读取。
 
 在 `服务器端/llm_server/.env` 或 `服务器端/llm_server/travelassistant/.env` 写入：
 
@@ -32,6 +32,9 @@ uni-app 前端和 Django 后端组成的旅游助手。首页可以浏览国内�
 DASHSCOPE_API_KEY=
 WEATHER_API_KEY=
 AMAP_API_KEY=
+DJANGO_SECRET_KEY=
+JWT_SECRET=
+DB_PASSWORD=
 ```
 
 `DASHSCOPE_API_KEY` 用于通义千问和文本向量，`WEATHER_API_KEY` 用于心知天气，`AMAP_API_KEY` 用于高德地理编码和附近搜索。
